@@ -59,9 +59,14 @@ public class TwoDimensionalArray {
         }
     }
 
-    
+    @Override
+    public String toString() {
+        return Arrays.deepToString(arr);
+    }
+
     public static void main(String[] args) {
-        TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray(5,5);
-        System.out.println(Arrays.toString(twoDimensionalArray.arr));
+        TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray(3,5);
+//        System.out.println(Arrays.toString(twoDimensionalArray.arr));
+        System.out.println(twoDimensionalArray);
     }
 }
