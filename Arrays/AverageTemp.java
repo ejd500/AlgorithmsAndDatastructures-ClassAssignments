@@ -39,6 +39,7 @@ public class AverageTemp {
         }
         System.out.println(aboveAvg + " numbers are above the average temperature.");
         
+        input.close();
         
     }
 }
